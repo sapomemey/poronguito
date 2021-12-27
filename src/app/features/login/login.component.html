@@ -1,0 +1,17 @@
+<div class="login-container">
+  <mat-card>
+    <form [formGroup]="form" (ngSubmit)="handlerSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="ejemplo@gmail.com" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput placeholder="*******" formControlName="password">
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button color="primary">login</button>
+    </form>
+  </mat-card>
+</div>

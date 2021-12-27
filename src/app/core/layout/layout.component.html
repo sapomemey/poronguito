@@ -1,0 +1,17 @@
+<div class="layout-container">
+  <header>
+    <mat-toolbar color="primary">
+  
+      <mat-button-toggle-group>
+        <mat-button-toggle routerLink="home">home</mat-button-toggle>
+        <mat-button-toggle routerLink="venta-del-dia">Venta del dia</mat-button-toggle>
+        <mat-button-toggle (click)="signOut()">Cerrar sesión</mat-button-toggle>
+      </mat-button-toggle-group>
+  
+    </mat-toolbar>
+  </header>
+  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

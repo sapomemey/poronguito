@@ -1,0 +1,27 @@
+<div class="day-sale-container">
+  <mat-card class="menu-container">
+    <button class="day-sale-btn-primary day-sale-menu1" mat-raised-button color="accent" (click)="menu1.add()">{{menu1.name}} +</button>
+    <button class="day-sale-btn-secondary day-sale-remove1" mat-raised-button color="warn" (click)="menu1.subtract()">-</button>
+    <div class="day-sale-total total-menu1">
+      total: {{menu1.total}}
+    </div>
+
+    <button class="day-sale-btn-primary day-sale-menu2" mat-raised-button color="accent" (click)="menu2.add()">{{menu2.name}} +</button>
+    <button class="day-sale-btn-secondary day-sale-remove2" mat-raised-button color="warn" (click)="menu2.subtract()">-</button>
+    <div class="day-sale-total total-menu2">
+      total: {{menu2.total}}
+    </div>
+  </mat-card>
+
+  <mat-card class="config-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Menu 1</mat-label>
+      <input matInput type="text" [(ngModel)]="menu1.name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Menu 2</mat-label>
+      <input matInput type="text" [(ngModel)]="menu2.name">
+    </mat-form-field>
+  </mat-card>
+</div>

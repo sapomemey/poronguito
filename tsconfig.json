@@ -21,7 +21,15 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@pg/core/*": [
+        "src/app/core/*"
+      ],
+      "@pg/features/*": [
+        "src/app/features/*",
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

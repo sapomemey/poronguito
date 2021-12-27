@@ -1,0 +1,24 @@
+.layout-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px 1fr;
+
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+
+    mat-button-toggle {
+      font-size: .8rem;
+    }
+  }
+
+  main {
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+  }
+}
+

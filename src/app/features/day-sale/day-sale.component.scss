@@ -1,0 +1,57 @@
+.day-sale-container {
+  .menu-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+     "menu1 remove1"
+     "total1 total1"
+     "menu2 remove2"
+     "total2 total2";
+
+    .day-sale-btn-primary  {
+      background-color: #69f0ae;
+      font-size: 1.5rem;
+      height: 4rem;
+    }
+
+    .day-sale-btn-secondary {
+      font-size: 2rem;
+      height: 4rem;
+    }
+
+    .day-sale-total {
+      margin-top: 0.4rem;
+      font-size: 2rem;
+    }
+    
+    .day-sale-menu1 {
+      grid-area: menu1;
+    }
+
+    .day-sale-remove1 {
+      grid-area: remove1;
+    }
+
+    .total-menu1 {
+      grid-area: total1;
+    }
+
+    .day-sale-menu2 {
+      grid-area: menu2;
+    }
+
+    .day-sale-remove2 {
+      grid-area: remove2;
+    }
+
+    .total-menu2 {
+      grid-area: total2;
+    }
+  }
+
+  .config-container {
+    margin-top: 1rem;
+  }
+}

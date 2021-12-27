@@ -1,0 +1,13 @@
+<mat-card class="alert-dialog-container">
+  <mat-card-title>{{data.type}}</mat-card-title>
+  <mat-card-content>
+    <p>{{data.message}}</p>
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions>
+    <button mat-button (click)="close()">Cerrar</button>
+  </mat-card-actions>
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>
